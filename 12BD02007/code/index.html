@@ -1,0 +1,26 @@
+﻿<html>
+ <head>
+   <link rel="stylesheet" href="style.css" type="text/css">
+ </head>
+ <body>
+   <div id="head">
+     <span style="margin:50px;">Posts</span>
+   </div>
+   <div id="body">
+     <div id="post">
+        <@ replicate @>
+          <div class='message'>
+	     <table border='0' style='witdh:90%'>
+               <tr>
+                   <td style='width:50%;text-align:left;'><@ put date @></td>
+                   <td style='width:50%;text-align:right;'><@ put user @></td>
+               </tr>
+             </table>
+             <br><br>
+             <@ put postText @>
+          </div>
+        <@ replicate @>
+     </div>
+     <@ include menu.html @>
+ </body>
+</html>

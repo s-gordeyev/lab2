@@ -1,0 +1,29 @@
+﻿<html>
+ <head>
+   <link rel="stylesheet" href="style.css" type="text/css">
+ </head>
+ <body>
+   <div id="head">
+     <span style="margin:50px;">Add Post</span>
+   </div>
+   <div id="body">
+     <div id="post" style="text-align:center">
+         <form id="formBD" name="formBD" method="POST" action="insertPost.html">
+             <table border="0">
+                  <tr>
+                      <td>
+                         User name:
+                      </td>
+                      <td>
+                         <input type="text" class="inpt" name="user" id="user" style="width:100%;text-align:left;">
+                      </td>
+                  </tr>
+             </table>
+             <textarea rows="10" class="inpt" name="textPost" id="textPost" style="width:100%;text-align:left;"></textarea>
+             <br>
+             <input type="submit" class="btn" value="submit">
+         </form>
+     </div>
+     <@ include menu.html @>
+ </body>
+</html>
